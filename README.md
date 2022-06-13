@@ -56,7 +56,7 @@ faturalarının yönetimini bir sistem üzerinden yapacaksınız.
 
 
 ### Kullanılan Teknolojiler
-<img src="https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=fff"> <img src="https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=fff"> <img src="https://img.shields.io/badge/-Bootstrap-7952B3?logo=bootstrap&logoColor=fff"> <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=fff"> <img src="https://img.shields.io/badge/-React-61DAFB?logo=React&logoColor=fff"> <img src="https://img.shields.io/badge/-Material.ui-007FFF?logo=mui&logoColor=fff"> <img src="https://img.shields.io/badge/-i18next-26A69A?logo=i18next&logoColor=fff">
+<img src="https://img.shields.io/badge/-HTML-E34F26?logo=html5&logoColor=fff"> <img src="https://img.shields.io/badge/-CSS-1572B6?logo=css3&logoColor=fff"> <img src="https://img.shields.io/badge/-Bootstrap-7952B3?logo=bootstrap&logoColor=fff"> <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=fff"> <img src="https://img.shields.io/badge/-React-61DAFB?logo=React&logoColor=fff"> <img src="https://img.shields.io/badge/-Material.ui-007FFF?logo=mui&logoColor=fff"> 
 
 #### Uygulama burada açılacaktır:
 
