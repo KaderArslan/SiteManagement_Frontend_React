@@ -1,19 +1,14 @@
 import {  Container } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 
 import BillForm from "./BillForm";
 import axios from "../../Services/axios"
 import Footer from "../Footer/Footer"
 
 function Create() {
-  const [refresh, setRefresh] = useState(false);
-
-  const toggleRefresh = () => {
-    setRefresh(refresh=> !refresh);
-  }
 
   const addBill = (apartment) => {
-    axios.post("api/BillAdmin/Add", apartment).then(response => toggleRefresh()).catch(error => console.log(error))
+    axios.post("api/BillAdmin/Add", apartment).then(response => response).catch(error => console.log(error))
   };
 
 

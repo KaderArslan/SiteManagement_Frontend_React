@@ -1,7 +1,6 @@
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import EditIcon from '@mui/icons-material/Edit';
 import ListIcon from '@mui/icons-material/List';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
@@ -29,14 +28,7 @@ export default function Bill() {
         </ListItem>
       </Link>
 
-      <Link to="/bill/update" style={{ textDecoration: "none", color: "blue" }}>
-        <ListItem button id="update">
-          <ListItemIcon>
-            <EditIcon style={{ textDecoration: "none", color: "blue" }}/>
-          </ListItemIcon>
-          <ListItemText primary="Update" />
-        </ListItem>
-      </Link>
+
 
     </div>
   );

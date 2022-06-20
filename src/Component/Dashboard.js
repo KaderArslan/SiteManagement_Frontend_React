@@ -21,15 +21,15 @@ import Payment from "./Payment/Payment";
 
 import ApartmentList from "./Apartment/List";
 import ApartmentCreate from "./Apartment/Create";
-import ApartmentUpdate from "./Apartment/Update";
+
 
 import BillList from "./Bill/List";
 import BillCreate from "./Bill/Create";
-import BillUpdate from "./Bill/Update";
+
 
 import UserList from "./User/List";
 import UserCreate from "./User/Create";
-import UserUpdate from "./User/Update";
+
 
 const drawerWidth = 240;
 
@@ -90,6 +90,9 @@ function DashboardContent() {
     if (r === "/home") {
       return <Home />;
     }
+    // else if (r === "/dashboard") {
+    //   return <Home />;
+    // }
 
     else if (r === "/apartment/list") {
       return <ApartmentList />;
@@ -97,9 +100,7 @@ function DashboardContent() {
     else if (r === "/apartment/create") {
       return <ApartmentCreate />;
     }
-    else if (r === "/apartment/update") {
-      return <ApartmentUpdate />;
-    }
+
 
     else if (r === "/bill/list") {
       return <BillList />;
@@ -107,9 +108,7 @@ function DashboardContent() {
     else if (r === "/bill/create") {
       return <BillCreate />;
     }
-    else if (r === "/bill/update") {
-      return <BillUpdate />;
-    }
+
 
     else if (r === "/user/list") {
       return <UserList />;
@@ -117,9 +116,7 @@ function DashboardContent() {
     else if (r === "/user/create") {
       return <UserCreate />;
     }
-    else if (r === "/user/update") {
-      return <UserUpdate />;
-    }
+
 
     else if (r === "/message") {
       return <Message />;

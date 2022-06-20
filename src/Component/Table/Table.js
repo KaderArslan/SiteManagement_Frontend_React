@@ -1,8 +1,5 @@
-import {
-    DataGrid
-  } from '@mui/x-data-grid';
-  
-  import React, { useState } from "react";
+import React, { useState } from "react";
+import { DataGrid } from '@mui/x-data-grid';
   
   const Table = ({ rows, columns }) => {
     const [pageSize, setPageSize] = useState(10);
@@ -10,18 +7,15 @@ import {
     const handlePageSizeChange = (pageSize) => {
       setPageSize(pageSize);
     };
-  
+
     return (
       <div style={{ height: 400, width: "100%" }}>
         <DataGrid
           rows={rows}
           columns={columns}
-          pagination
-          paginationMode="client"
-          sortingMode="client"
           pageSize={pageSize}
           onPageSizeChange={handlePageSizeChange}
-          rowsPerPageOptions={[2, 5, 10, 20, 50, 100]}
+          rowsPerPageOptions={[5, 10, 20, 50, 100]}
         />
       </div>
     );

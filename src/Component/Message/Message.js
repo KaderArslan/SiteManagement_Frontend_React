@@ -1,10 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { Container} from "@mui/material";
 
 import Table from "../Table/Table";
-import { Container} from "@mui/material";
-import { getMessageList } from "../GetTableColumn/getMessageList";
 import axios from "../../Services/axios"
 import Footer from "../Footer/Footer"
+
+const getMessageList = [
+  {field: "messageId",headerName: "ID",sortable: false,},
+  {field: "messageTitle",headerName: "Title",sortable: false,},
+  {field: "messageText",headerName: "Text",sortable: false,},
+  {field: "messageSender",headerName: "Sender",sortable: false,},
+  {field: "messageReceiver",headerName: "Receiver",sortable: false,},
+  {field: "messageIsRead",headerName: "Is Read",sortable: false,},
+  {field: "messageDate",headerName: "Message Date",sortable: false,}
+];
 
 
 function Message() {
@@ -12,8 +21,8 @@ function Message() {
 
   const messageList = getMessageList.map((e) => ({
     ...e,
-    ...(e.field === "actions" && {
-      renderCell: (params) => (params.row.actions ? "Yes" : "No"),
+    ...(e.field === "messageIsRead" && {
+      renderCell: (params) => (params.row.messageIsRead ? "True" : "False"),
     }),
   }));
 
